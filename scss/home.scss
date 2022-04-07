@@ -1,5 +1,124 @@
+@font-face {
+    font-family: 'inter';
+    src: url('../assets/fonts/inter-variablefont_slntwght-webfont.woff2') format('woff2'),
+         url('../assets/fonts/inter-variablefont_slntwght-webfont.woff') format('woff');
+}
+
+//*** Resets ***//
+html {
+    box-sizing: border-box;
+  }
+
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+
+  ul {
+      list-style-type: none;
+      padding: 0;
+      margin: 0;
+  }
+
+  a {
+      text-decoration: none;
+      font-family: inter;
+      font-size: .9rem;
+      font-weight: 500;
+      text-transform: capitalize;
+      color: rgba(255, 255, 255, .9);
+  }
+
+//*** variables ***//
+
+  //*** colors ***//
+    $color-dark: #1d2e38;
+    $color-light: #2d4156;
+    $gray: #eaeff2;
+
+  //*** breakpoints ***//
+    $medium: 40rem;
+    $large: rem;
+
+
+//*** Utilities ***//
+
+.button {
+    background-color: rgb(17, 24, 39);
+    padding: .8em;
+    border-radius: 13%;
+
+    &:hover {
+        background-color: rgba(17, 24, 39, .3);
+    }
+}
+
+  //*** mixins ***//
+    
+  @mixin small-screens {
+        @media (max-width: $medium) {
+            @content;
+        }
+    }
+
+    @mixin medium-screens-only {
+        @media (min-width: $medium) AND (max-width: $large) {
+            @content;
+        }
+    }
+
+    @mixin medium-and-above {
+        @media (min-width: $medium) {
+            @content;
+        }
+    }
+
+    @mixin large-screens {
+        @media (min-width: $large) {
+            @content;
+        }
+    }
+
+//*** Typography ***//
+
+
 body {
-    background-color: red;
-    width: 100vw;
-    height: 100vh;
+    background-color:  rgba(17, 24, 39, .9);
+    //padding: 2em;
+}
+
+
+//*** Layout ***//
+
+#primary-navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 2rem 1rem;
+
+    @include medium-and-above {
+        margin-inline: 4rem;
+    }
+
+    & > li ul {
+        display: flex;
+        align-items: center;
+        gap: 2rem;
+    }
+
+    .hide {
+        display: none;
+
+        @include medium-and-above {
+            display: inline;
+        }
+    }
+
+    .button {
+        padding: .8em 1.2em;
+        border-radius: 20px;
+    }
+
+    #logo {
+        margin-right: 1rem;
+    }
 }
