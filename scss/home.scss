@@ -33,7 +33,7 @@ html {
   }
 
   body {
-    background-color: rgba(17, 24, 39, .87);
+    background-color: rgba(17, 24, 39, .9);
     font-family: inter;
 }
 
@@ -49,7 +49,7 @@ html {
       font-size: .9rem;
       font-weight: 500;
       text-transform: capitalize;
-      color: rgba(255, 255, 255, .9);
+      color: rgba(255, 255, 255, .95);
   }
 
   #container {
@@ -69,14 +69,14 @@ html {
 
   //*** breakpoints ***//
     $medium: 40rem;
-    $large: rem;
+    $large: 64rem;
 
 
 //*** Utilities ***//
 
 .button {
     background-color: rgb(17, 24, 39);
-    padding: .8em;
+    padding: 1em 1.5em;
     border-radius: 15px;
 
     &:hover {
@@ -144,13 +144,23 @@ h1 {
     text-align: center;
     font-weight: 900;
     line-height: 1.3;
+    max-width: 50rem;
+    margin-bottom: 0.5rem;
+
+    @include medium-and-above {
+        font-size: 3.75rem;
+    }
 }
 
 
 //*** Layout ***//
 
 main {
-    padding-top: 1.8rem;
+    padding-top: 1.6rem;
+
+    & > * {
+        padding-inline: 10%;
+    }
 }
 
 #primary-navigation {
@@ -159,7 +169,7 @@ main {
     align-items: center;
     margin: 2rem 1rem;
 
-    @include medium-and-above {
+    @include large-screens {
         margin-inline: 4rem;
     }
 
@@ -193,17 +203,24 @@ main {
     align-items: center;
 
     .button {
-        width: 11rem;
         font-size: 1.25rem;
         text-align: center;
         margin-top: 3.5rem;
+
+        @include small-screens {
+            max-width: 50vw;
+        }
     }
 
     .s-body-text {
         color: #fff;
-        font-size: .7em;
+        font-size: .9em;
         text-align: center;
-        width: 11rem;
+        margin-block: 1.5rem 4rem;
+        
+        @include small-screens {
+            max-width: 50vw;
+        }
     }
 
     img {
