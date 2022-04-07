@@ -65,11 +65,6 @@ html {
 
   #container {
     max-width: 100%;
-
-    /*@media (min-width: ) {
-      max-width: calc(min(77.5rem, 100%));
-      margin: auto;
-    }*/
   }
 
   img {
@@ -242,7 +237,19 @@ header {
     }
 }
 
+.sections {
+    display: flex;
+    align-items: center;
+}
+
 .share-post {
     background-color: #fff;
-    height: 50vh;
+}
+
+.set-schedule {
+    background-color: rgba(255, 255, 255, .1);
+}
+
+.snooze-schedule {
+    background-color: #fff;
 }
