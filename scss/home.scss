@@ -167,7 +167,7 @@ main {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 2rem 1rem;
+    margin: 2rem 1.2rem;
 
     @include large-screens {
         margin-inline: 4rem;
@@ -188,7 +188,7 @@ main {
     }
 
     .button {
-        padding: .8em 1.2em;
+        padding: .8em 1.5em;
         border-radius: 20px;
     }
 
