@@ -283,32 +283,33 @@ header {
     background-color: #fff;
 }
 
+
+/***** ******* ********  *****  ********/
+
+/*
+
 .trial {
     background-color: rgba(17, 24, 39, .9);
     color: #fff;
-    display: grid;
-    gap: 1.5rem;
-    margin: auto;
+    display: flex;
+    flex-direction: column;
+
+    .cards-container {
+        gap: 1.5rem;
+        display: flex;
+    }
 
     @include medium-and-above {
-        grid-template-columns: 1fr 1fr;
-        justify-content: space-between;
 
         > div:first-child {
-            grid-column-start: 1;
-            grid-column-end: 3;
             text-align: center;
             max-width: 38rem;
-            margin: auto;
         }
 
         .card {
-            max-width: 25rem;
+            flex: 1;
+            min-width: 25rem;
         }
-
-        /*.free-trial {
-
-        }*/
     }
 
     .body-text {
@@ -382,13 +383,31 @@ header {
             font-weight: 500;
         }
     }
+}*/
+
+/******* *** ******** **** ***************/
+.trial-section-container {
+    padding-inline: 0;
 }
+
+.trial {
+    background-color: rgba(17, 24, 39, .9);
+    color: #fff;
+
+    svg {
+        height: 1.3rem;
+        float: left;
+        margin-right: .7rem;
+    }
+
+}
+
+/****** ******* ******** *****/
 
 footer {
     background-color: #fff;
     display: flex;
     gap: 1rem;
-    //flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
     padding-block: 2rem;
