@@ -232,6 +232,12 @@ header {
   max-width: 23rem;
 }
 
+@media (min-width: 64rem) {
+  .sections .feature-image {
+    max-width: 25rem;
+  }
+}
+
 .share-post {
   background-color: #fff;
 }
@@ -248,7 +254,28 @@ header {
   background-color: rgba(17, 24, 39, 0.9);
   color: #fff;
   display: grid;
-  gap: 2rem;
+  gap: 1.5rem;
+  margin: auto;
+}
+
+@media (min-width: 48rem) {
+  .trial {
+    grid-template-columns: 1fr 1fr;
+    justify-content: space-between;
+    /*.free-trial {
+
+        }*/
+  }
+  .trial > div:first-child {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    text-align: center;
+    max-width: 38rem;
+    margin: auto;
+  }
+  .trial .card {
+    max-width: 25rem;
+  }
 }
 
 .trial .body-text {
