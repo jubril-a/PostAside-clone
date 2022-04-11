@@ -30,7 +30,7 @@
   $gray: #eaeff2;
 
 //*** breakpoints ***//
-  $medium: 40rem;
+  $medium: 48rem;
   $large: 64rem;
 
 
@@ -79,7 +79,7 @@ html {
     border-radius: 15px;
 
     &:hover {
-        background-color: rgba(17, 24, 39, .3);
+        background-color: rgba(17, 24, 39, .85);
     }
 }
 
@@ -245,18 +245,25 @@ header {
 }
 
 .sections {
+    display: flex;
+    flex-direction: column;
     align-items: center;
     padding-block: 5rem;
     background-color: #fff;
 
-    @include large-screens {
-        display: flex;
+    @include medium-and-above {
+        flex-direction: row;
+        gap: calc(4rem + 2vw);
     }
 
     h2 {
         font-size: 2.25rem;
         font-weight: bold;
         line-height: 1.2;
+    }
+
+    .feature-image {
+        max-width: 23rem;
     }
 }
 
@@ -327,8 +334,11 @@ header {
                 flex-direction: column;
 
                 span {
-                    display: block;
                     font-size: .8rem;
+                }
+
+                span.channel {
+                    display: block;
                 }
             }
 
@@ -351,6 +361,8 @@ header {
 footer {
     background-color: #fff;
     display: flex;
+    gap: 1rem;
+    //flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
     padding-block: 2rem;
@@ -366,9 +378,10 @@ footer {
 
     p {
         font-size: .85rem;
+        text-align: right;
     }
 
     * {
-        color: rgba(0, 0, 0, 0.6);
+        color: rgba(0, 0, 0, 0.4);
     }
 }

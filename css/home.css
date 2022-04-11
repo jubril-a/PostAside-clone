@@ -62,7 +62,7 @@ img {
 }
 
 .button:hover {
-  background-color: rgba(17, 24, 39, 0.3);
+  background-color: rgba(17, 24, 39, 0.85);
 }
 
 .underline {
@@ -99,7 +99,7 @@ h1 {
   margin-bottom: 0.5rem;
 }
 
-@media (min-width: 40rem) {
+@media (min-width: 48rem) {
   h1 {
     font-size: 3.75rem;
   }
@@ -149,7 +149,7 @@ header {
   display: none;
 }
 
-@media (min-width: 40rem) {
+@media (min-width: 48rem) {
   #primary-navigation .hide {
     display: inline;
   }
@@ -176,7 +176,7 @@ header {
   margin-top: 3.5rem;
 }
 
-@media (max-width: 40rem) {
+@media (max-width: 48rem) {
   .landing .button {
     max-width: 50vw;
   }
@@ -196,7 +196,7 @@ header {
   margin-block: 1.5rem 4rem;
 }
 
-@media (max-width: 40rem) {
+@media (max-width: 48rem) {
   .landing .s-body-text {
     max-width: 50vw;
   }
@@ -208,14 +208,17 @@ header {
 }
 
 .sections {
+  display: flex;
+  flex-direction: column;
   align-items: center;
   padding-block: 5rem;
   background-color: #fff;
 }
 
-@media (min-width: 64rem) {
+@media (min-width: 48rem) {
   .sections {
-    display: flex;
+    flex-direction: row;
+    gap: calc(4rem + 2vw);
   }
 }
 
@@ -223,6 +226,10 @@ header {
   font-size: 2.25rem;
   font-weight: bold;
   line-height: 1.2;
+}
+
+.sections .feature-image {
+  max-width: 23rem;
 }
 
 .share-post {
@@ -293,8 +300,11 @@ header {
 }
 
 .trial .card .feature ul span {
-  display: block;
   font-size: .8rem;
+}
+
+.trial .card .feature ul span.channel {
+  display: block;
 }
 
 .trial .card .feature svg {
@@ -313,6 +323,7 @@ header {
 footer {
   background-color: #fff;
   display: flex;
+  gap: 1rem;
   justify-content: space-between;
   align-items: center;
   padding-block: 2rem;
@@ -329,9 +340,10 @@ footer .social i {
 
 footer p {
   font-size: .85rem;
+  text-align: right;
 }
 
 footer * {
-  color: rgba(0, 0, 0, 0.6);
+  color: rgba(0, 0, 0, 0.4);
 }
 /*# sourceMappingURL=home.css.map */
