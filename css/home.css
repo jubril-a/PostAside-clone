@@ -109,6 +109,8 @@ h1 {
 }
 
 main {
+  display: flex;
+  flex-direction: column;
   padding-top: 1.6rem;
 }
 
@@ -124,7 +126,7 @@ main > * {
 
 header {
   max-width: calc(min(1320px, 100%));
-  margin: auto;
+  margin-inline: auto;
 }
 
 #primary-navigation {
@@ -202,8 +204,19 @@ header {
 }
 
 .sections {
-  display: flex;
   align-items: center;
+  padding-block: 5rem;
+}
+
+@media (min-width: 64rem) {
+  .sections {
+    display: flex;
+  }
+}
+
+.sections h2 {
+  font-size: 2rem;
+  line-height: 1.2;
 }
 
 .share-post {
