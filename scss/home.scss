@@ -99,11 +99,9 @@ html {
 }
 
 .body-text {
-    color: rgba(255, 255, 255, .8);
-    text-align: center;
+    color: #00000066;
     font-size: 1.125rem;
     line-height: 1.4;
-    font-weight: 500;
 }
 
 .capitalise {
@@ -141,7 +139,7 @@ h1 {
     color: #fff;
     font-size: 2.9rem;
     text-align: center;
-    font-weight: 900;
+    //font-weight: 900;
     line-height: 1.3;
     max-width: 50rem;
     margin-bottom: 0.5rem;
@@ -160,9 +158,9 @@ main {
     padding-top: 1.6rem;
 
     & > * {
-        padding-inline: 10%;
+        padding-inline: 1rem;
    
-        @media (min-width: $large) {
+        @include large-screens {
             padding-inline: 9vw;
         }
     }
@@ -222,10 +220,17 @@ header {
         }
     }
 
-    .s-body-text {
-        color: #fff;
-        font-size: .9em;
+    p {
         text-align: center;
+        color: rgba(255, 255, 255, .7);
+    }
+
+    .body-text {
+      font-weight: 500;
+    }
+
+    .s-body-text {
+        font-size: .9em;
         margin-block: 1.5rem 4rem;
         
         @include small-screens {
@@ -242,13 +247,15 @@ header {
 .sections {
     align-items: center;
     padding-block: 5rem;
+    background-color: #fff;
 
     @include large-screens {
         display: flex;
     }
 
     h2 {
-        font-size: 2rem;
+        font-size: 2.25rem;
+        font-weight: bold;
         line-height: 1.2;
     }
 }
@@ -258,9 +265,110 @@ header {
 }
 
 .set-schedule {
-    background-color: rgba(255, 255, 255, .1);
+    background-color: rgba(255, 255, 255, .9);
 }
 
 .snooze-schedule {
     background-color: #fff;
+}
+
+.trial {
+    background-color: rgba(17, 24, 39, .9);
+    color: #fff;
+    display: grid;
+    gap: 2rem;
+
+    .body-text {
+        color: #fff;
+    }
+
+    .card {
+        background-color: #fff;
+        border-radius: 1rem;
+
+        * {
+            color: rgba(0, 0, 0, 0.6);
+        }
+
+        .description, .feature {
+            padding: 2.5rem 2rem 2rem;
+        }
+
+        .description {
+
+            .price {
+                font-size: 1.125rem;
+                
+                span {
+                    font-size: 3rem;
+                    font-weight: bold;
+                    line-height: 1.125;
+                    color: rgb(17, 24, 39);
+                }
+            }
+        }
+
+        .product-type {
+            background-color: rgba(5, 66, 145, 0.1);
+            color: rgba(5, 66, 145, .5);
+            font-size: .85rem;
+            padding: .4rem 1rem;
+            border-radius: .7rem;
+            font-weight: 500;
+            text-transform: uppercase;
+        }
+
+        .feature {
+            background-color: rgba(5, 66, 145, 0.1);
+
+            ul {
+                display: flex;
+                gap: .75rem;
+                flex-direction: column;
+
+                span {
+                    display: block;
+                    font-size: .8rem;
+                }
+            }
+
+            svg {
+                height: 1.3rem;
+                float: left;
+                margin-right: .7rem;
+            }
+        }
+
+        .button {
+            color: #fff;
+            margin-top: 2rem;
+            width: 100%;
+            font-weight: 500;
+        }
+    }
+}
+
+footer {
+    background-color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-block: 2rem;
+
+    .social {
+        display: flex;
+        gap: 1.125rem;
+
+        i {
+            font-size: x-large;
+        }
+    }
+
+    p {
+        font-size: .85rem;
+    }
+
+    * {
+        color: rgba(0, 0, 0, 0.6);
+    }
 }
