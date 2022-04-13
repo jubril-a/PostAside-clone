@@ -157,7 +157,7 @@ main {
     flex-direction: column;
     padding-top: 1.6rem;
 
-    & > * {
+    & > *:not(footer) {
         padding-inline: 1rem;
    
         @include large-screens {
@@ -214,6 +214,11 @@ header {
         font-size: 1.25rem;
         text-align: center;
         margin-top: 3.5rem;
+        //transition: padding .25s;
+
+        &:hover {
+            transform: scale(1);
+        }
 
         @include small-screens {
             max-width: 50vw;
@@ -283,37 +288,43 @@ header {
     background-color: #fff;
 }
 
-
-/***** ******* ********  *****  ********/
-
-/*
+.trial-section-container {
+    padding-inline: 0;
+}
 
 .trial {
     background-color: rgba(17, 24, 39, .9);
     color: #fff;
-    display: flex;
-    flex-direction: column;
-
-    .cards-container {
-        gap: 1.5rem;
-        display: flex;
-    }
-
-    @include medium-and-above {
-
-        > div:first-child {
-            text-align: center;
-            max-width: 38rem;
-        }
-
-        .card {
-            flex: 1;
-            min-width: 25rem;
-        }
-    }
+    padding-inline: 1rem;
+    display: block;
 
     .body-text {
         color: #fff;
+    }
+
+    > div:first-child {
+        text-align: center;
+        max-width: 38rem;
+        margin: auto;
+    }
+
+    .cards-container {
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+        padding-top: 5rem;
+
+        @include medium-and-above {
+            flex-direction: row;
+            max-width: 50rem;
+            margin: auto;
+
+            .card {
+                flex: 1;
+            }
+
+        }
+
     }
 
     .card {
@@ -382,27 +393,12 @@ header {
             width: 100%;
             font-weight: 500;
         }
-    }
-}*/
 
-/******* *** ******** **** ***************/
-.trial-section-container {
-    padding-inline: 0;
-}
-
-.trial {
-    background-color: rgba(17, 24, 39, .9);
-    color: #fff;
-
-    svg {
-        height: 1.3rem;
-        float: left;
-        margin-right: .7rem;
     }
 
-}
 
-/****** ******* ******** *****/
+
+}
 
 footer {
     background-color: #fff;
@@ -411,6 +407,7 @@ footer {
     justify-content: space-between;
     align-items: center;
     padding-block: 2rem;
+    padding-inline: 5vw;
 
     .social {
         display: flex;
