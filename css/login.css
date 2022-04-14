@@ -94,6 +94,7 @@ form input[type="submit"] {
   font-family: 'Inter';
   font-size: 1rem;
   font-weight: 700;
+  cursor: pointer;
 }
 
 p, a, label[for="accept-terms"] {
@@ -123,6 +124,7 @@ input:checked + .switch > .toggle {
   height: 20px;
   position: relative;
   margin-right: .5rem;
+  cursor: pointer;
 }
 
 .switch .toggle {
