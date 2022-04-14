@@ -19,6 +19,7 @@ input:checked + .switch > .toggle {
     width: 32px;
     height: 20px;
     position: relative;
+    margin-right: .5rem;
 
     .toggle {
         position: absolute;

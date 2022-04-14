@@ -70,7 +70,7 @@ form {
   gap: 1rem;
 }
 
-form label:not(label[for="accept-terms"]) {
+form label:not(.except) {
   display: flex;
   color: #272d3a;
   gap: .5rem;
@@ -103,5 +103,9 @@ p, a, label[for="accept-terms"] {
 
 .flex-start {
   align-self: flex-start;
+}
+
+input[id="accept-terms"] {
+  margin-right: .5rem;
 }
 /*# sourceMappingURL=register.css.map */
