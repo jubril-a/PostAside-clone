@@ -5,7 +5,6 @@ This is a clone of [Postaside](https://www.postaside.com).
 ## Table of contents
 
 - [Overview](#overview)
-  - [The challenge](#the-challenge)
   - [Screenshot](#screenshot)
   - [Links](#links)
 - [My process](#my-process)
@@ -15,14 +14,6 @@ This is a clone of [Postaside](https://www.postaside.com).
 - [Author](#author)
 
 ## Overview
-
-### The challenge
-
-Users should be able to:
-
-- View the optimal layout for each of the website's pages depending on their device's screen size
-- See hover states for all interactive elements on the page
-- View each page and be able to toggle between the tabs to see new information
 
 ### Screenshot
 
@@ -34,9 +25,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Frontend Mentor](https://www.frontendmentor.io/solutions/spacetourismwebsite-r1VlG6YQq)
-- Live Site URL: [Github](https://automate-dh.github.io/Space-tourism-website/)
-- View Code: [Github](https://github.com/automate-dh/Space-tourism-website)
+- Live Site URL: [Github](https://jubril-a.github.io/PostAside-clone/)
+- View Code: [Github](https://github.com/jubril-a/PostAside-clone)
 
 
 ## My process
@@ -55,7 +45,7 @@ Users should be able to:
 ### What I learned
 
 - Sass
-- Ajax
+- Responsive Web Design
 - Git & Github
 
 ### Useful resources
@@ -66,5 +56,5 @@ Users should be able to:
 
 ## Author
 
-- Frontend Mentor - [@automate-dh](https://www.frontendmentor.io/profile/automate-dh)
-- Hashnode - [@Automate](https://hashnode.com/@Automate)
+- LinkedIn - [@Abdulsalam Jubril](https://www.linkedin.com/in/abdulsalam-jubril-83536121a)
+- Dev.to - [@automate](https://dev.to/automate)
