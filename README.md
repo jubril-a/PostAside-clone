@@ -1,4 +1,4 @@
-# PostAside clon
+# PostAside clone
 This is a clone of [Postaside](https://www.postaside.com) built with html, css, sass & javascript
 
 ![preview](preview.png)
@@ -18,10 +18,10 @@ This is a clone of [Postaside](https://www.postaside.com) built with html, css, 
 
 ### Screenshot
 
-![](/space-tourism-website/assets/screenshots/home.png)
-![](/space-tourism-website/assets/screenshots/signup.png)
-![](/space-tourism-website/assets/screenshots/login.png)
-![](/space-tourism-website/assets/screenshots/forgotpassword.png)
+![](/PostAside-clone/assets/images/screenshots/home.png)
+![](/PostAside-clone/assets/images/screenshots/signup.png)
+![](/PostAside-clone/assets/images/screenshots/login.png)
+![](/PostAside-clone/assets/images/screenshots/forgotpassword.png)
 
 
 ### Links
