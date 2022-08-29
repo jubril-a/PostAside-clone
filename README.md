@@ -1,5 +1,6 @@
 # PostAside clone
-This is a clone of [Postaside](https://www.postaside.com).
+This is a clone of [Postaside](https://www.postaside.com) built with html, css, sass, & javascript
+
 ![preview](preview.png)
 
 ## Table of contents
