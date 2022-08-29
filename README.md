@@ -18,10 +18,10 @@ This is a clone of [Postaside](https://www.postaside.com) built with html, css, 
 
 ### Screenshot
 
-![](/space-tourism-website/assets/screenshots/first.png)
-![](/space-tourism-website/assets/screenshots/second.png)
-![](/space-tourism-website/assets/screenshots/third.png)
-![](/space-tourism-website/assets/screenshots/fourth.png)
+![](/space-tourism-website/assets/screenshots/home.png)
+![](/space-tourism-website/assets/screenshots/signup.png)
+![](/space-tourism-website/assets/screenshots/login.png)
+![](/space-tourism-website/assets/screenshots/forgotpassword.png)
 
 
 ### Links
