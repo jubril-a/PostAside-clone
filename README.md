@@ -1,6 +1,6 @@
 # PostAside clone
 This is a clone of [Postaside](https://www.postaside.com).
-![preview](preview.jpg)
+![preview](preview.png)
 
 ## Table of contents
 
