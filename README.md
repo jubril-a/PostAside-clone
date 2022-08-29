@@ -19,9 +19,9 @@ This is a clone of [Postaside](https://www.postaside.com) built with html, css, 
 ### Screenshot
 
 ![](/assets/images/screenshots/home.png)
-![](/PostAside-clone/assets/images/screenshots/signup.png)
-![](/PostAside-clone/assets/images/screenshots/Login.png)
-![](/PostAside-clone/assets/images/screenshots/forgotpassword.png)
+![](/assets/images/screenshots/signup.png)
+![](/assets/images/screenshots/Login.png)
+![](/assets/images/screenshots/forgotpassword.png)
 
 
 ### Links
